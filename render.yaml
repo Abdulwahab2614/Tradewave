@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: tradewave
+    env: node
+    rootDir: .
+    buildCommand: npm --prefix frontend install && npm --prefix frontend run build && npm --prefix dashboard install && npm --prefix dashboard run build && npm --prefix backend install && mkdir -p backend/public/frontend backend/public/dashboard && cp -r frontend/build/. backend/public/frontend && cp -r dashboard/build/. backend/public/dashboard
+    startCommand: cd backend && node index.js
+    envVars:
+      - key: NODE_VERSION
+        value: 22.11.0
+      - key: PORT
+        sync: false
+      - key: MONGO_URL
+        sync: false
+      - key: AUTH_SECRET
+        sync: false
