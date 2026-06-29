@@ -1,0 +1,29 @@
+<svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="coolGradientRect" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6a11cb;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2575fc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ffcc;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glowRect">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="400" height="120" rx="15" fill="#1a1a2e" stroke="url(#coolGradientRect)" stroke-width="2" stroke-opacity="0.3"/>
+
+  <g filter="url(#glowRect)" transform="translate(20, 10)">
+      <path d="M 20 80 C 40 100, 60 40, 80 60 S 110 70, 130 30" stroke="url(#coolGradientRect)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path d="M 130 30 L 115 42 L 110 28 Z" fill="url(#coolGradientRect)"/>
+      <circle cx="130" cy="30" r="6" fill="#fff"/>
+  </g>
+
+  <g transform="translate(170, 0)">
+      <text x="0" y="70" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="32" fill="url(#coolGradientRect)" letter-spacing="1.5" filter="url(#glowRect)">TRADEWAVE</text>
+      <text x="2" y="92" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="500" font-size="12" fill="#a0a0a0" letter-spacing="3">NEXT GEN INVESTING</text>
+  </g>
+</svg>
