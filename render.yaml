@@ -9,8 +9,8 @@ services:
       - key: NODE_VERSION
         value: 22.11.0
       - key: PORT
-        sync: false
+        sync: 3002
       - key: MONGO_URL
-        sync: false
+        sync: mongodb+srv://wahababdul58639_db_user:<AbdulTradewave211>@tradewave.3vqyvao.mongodb.net/?appName=Tradewave
       - key: AUTH_SECRET
-        sync: false
+        sync: 8f3e1a9c2d7b4f6e0a5c8d2b7f4e1a9c3d6b8f2e5a7c1d4b9f0e3a6c8d2b5f7e
